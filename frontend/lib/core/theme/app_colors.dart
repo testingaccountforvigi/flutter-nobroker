@@ -46,4 +46,7 @@ class AppColors {
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
+  
+  // Alias for consistency across codebase
+  static const Color accent = primary;
 }

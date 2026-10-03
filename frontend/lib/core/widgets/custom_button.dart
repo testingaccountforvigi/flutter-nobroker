@@ -3,7 +3,7 @@ import '../theme/app_colors.dart';
 import '../theme/app_typography.dart';
 import '../theme/app_spacing.dart';
 
-enum ButtonVariant { primary, secondary, outline, text }
+enum ButtonVariant { primary, secondary, outline, text, outlined }
 enum ButtonSize { small, medium, large }
 
 /// Custom button component with consistent styling.
@@ -95,6 +95,7 @@ class CustomButton extends StatelessWidget {
         );
 
       case ButtonVariant.outline:
+      case ButtonVariant.outlined:
         return SizedBox(
           width: fullWidth ? double.infinity : null,
           child: OutlinedButton(
@@ -133,6 +134,7 @@ class CustomButton extends StatelessWidget {
         return AppColors.textInverse;
       case ButtonVariant.secondary:
       case ButtonVariant.outline:
+      case ButtonVariant.outlined:
         return AppColors.textPrimary;
       case ButtonVariant.text:
         return AppColors.primary;

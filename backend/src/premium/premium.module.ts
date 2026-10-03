@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
-import { PremiumService } from './premium.service';
 import { PremiumController } from './premium.controller';
+import { PremiumService } from './premium.service';
+import { PrismaModule } from '../common/prisma/prisma.module';
 
 @Module({
+  imports: [PrismaModule],
   controllers: [PremiumController],
   providers: [PremiumService],
   exports: [PremiumService],

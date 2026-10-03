@@ -22,4 +22,11 @@ class AppSpacing {
   static const double listItemSpacing = md; // 12
   static const double chipSpacing = sm; // 8
   static const double iconSpacing = sm; // 8
+  
+  // Border radius
+  static const double radiusSm = sm; // 8
+  static const double radiusMd = md; // 12
+  static const double radiusLg = lg; // 16
+  static const double radiusXl = xl; // 20
+  static const double radiusFull = 999; // Fully rounded
 }

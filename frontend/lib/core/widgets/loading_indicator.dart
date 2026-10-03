@@ -5,23 +5,34 @@ import '../theme/app_colors.dart';
 class LoadingIndicator extends StatelessWidget {
   final Color? color;
   final double size;
+  final String? message;
 
   const LoadingIndicator({
     super.key,
     this.color,
     this.size = 24,
+    this.message,
   });
 
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: SizedBox(
-        width: size,
-        height: size,
-        child: CircularProgressIndicator(
-          strokeWidth: 2.5,
-          color: color ?? AppColors.primary,
-        ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(
+            width: size,
+            height: size,
+            child: CircularProgressIndicator(
+              strokeWidth: 2.5,
+              color: color ?? AppColors.primary,
+            ),
+          ),
+          if (message != null) ...[
+            const SizedBox(height: 16),
+            Text(message!),
+          ],
+        ],
       ),
     );
   }

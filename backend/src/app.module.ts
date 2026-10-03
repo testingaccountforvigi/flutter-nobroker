@@ -6,6 +6,7 @@ import { UsersModule } from './users/users.module';
 import { PropertiesModule } from './properties/properties.module';
 import { FavoritesModule } from './favorites/favorites.module';
 import { InquiriesModule } from './inquiries/inquiries.module';
+import { AmenitiesModule } from './amenities/amenities.module';
 import { CallsModule } from './calls/calls.module';
 import { VerificationModule } from './verification/verification.module';
 import { AgreementsModule } from './agreements/agreements.module';
@@ -34,6 +35,7 @@ import { HealthModule } from './health/health.module';
     PropertiesModule,
     FavoritesModule,
     InquiriesModule,
+    AmenitiesModule,
     CallsModule,
     VerificationModule,
     AgreementsModule,

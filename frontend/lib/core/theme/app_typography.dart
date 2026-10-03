@@ -127,4 +127,7 @@ class AppTypography {
     height: 1.2,
     letterSpacing: 0.25,
   );
+  
+  // Alias for consistency
+  static const TextStyle body = bodyMedium;
 }
